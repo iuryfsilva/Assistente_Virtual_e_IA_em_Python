@@ -1,12 +1,7 @@
 import speech_recognition as reconhecimentoDeFala
 import pyttsx3
+from config import * #importa tudo que esta dentro do config
 from random import choice
-
-listaErros = [
-    "Não entendi....",
-    "Desculpe, não entendi",
-    "Repita novamente por favor"
-]
 
 reproducao = pyttsx3.init()
 
@@ -14,7 +9,9 @@ def saidaSom(resposta):
     reproducao.say(resposta)
     reproducao.runAndWait()
 
-def reconhecimentoDeVoz(respostaErroAleatoria):
+print("Ouvindo.......\n----------------\n")
+while True:
+    respostaErroAleatoria = choice(listaErros)
     reconhecimento = reconhecimentoDeFala.Recognizer()
 
     with reconhecimentoDeFala.Microphone() as microfone:
@@ -24,16 +21,14 @@ def reconhecimentoDeVoz(respostaErroAleatoria):
             try:
                 audio = reconhecimento.listen(microfone)
                 entrada = reconhecimento.recognize_google(audio, language='pt')
-                return "{}".format(entrada)
+                print("Você disse: {}".format(entrada)
 
+                resposta = conversas[entrada]
+                
+                print("Sakamoto-san: {}".format(resposta))
+                saidaSom("{}".format(resposta))
+                
             except reconhecimentoDeFala.UnknownValueError:
-                return respostaErroAleatoria
-
-print("Ouvindo.......\n----------------\n")
-
-while True:
-    respostaErroAleatoria = choice(listaErros)
-    fala = reconhecimentoDeVoz(respostaErroAleatoria)
-    print("Você disse: {}".format(fala))
-    saidaSom(fala)
+                saidaSom(respostaErroAleatoria)
+            
 
