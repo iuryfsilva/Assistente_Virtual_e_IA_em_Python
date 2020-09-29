@@ -24,7 +24,8 @@ while True:
                 print("Você disse: {}".format(entrada))
                 resposta = conversas[entrada]    
                 print("Sakamoto-san: {}".format(resposta))
-                saidaSom("{}".format(resposta)
+                saidaSom("{}".format(resposta))
+                         
             except reconhecimentoDeFala.UnknownValueError:
                 saidaSom(respostaErroAleatoria)
             
