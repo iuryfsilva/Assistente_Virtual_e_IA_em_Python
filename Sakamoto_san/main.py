@@ -1,24 +1,20 @@
-#-*- coding: utf-8 -*-
-
-#importanto os modulos do chatbot
-from chatterbot.trainers import ListTrainer
-from chatterbot import ChatBot
-
-import os
-
 import speech_recognition as reconhecimentoDeFala
+import pyttsx3
+from random import choice
 
-bot = ChatBot('Sakamoto_san')
+listaErros = [
+    "Não entendi....",
+    "Desculpe, não entendi",
+    "Repita novamente por favor"
+]
 
-bot.set_trainer(ListTrainer) # definir treinamento
+reproducao = pyttsx3.init()
 
-for _file in os.listdir('chats'): # Percorre todos os arquivos em chats
-    lines = open('chats/' + _file, 'r').readlines() # vamos ler as linhas
-    
-    bot.train(lines)
+def saidaSom(resposta):
+    reproducao.say(resposta)
+    reproducao.runAndWait()
 
-
-def reconhecimentoDeVoz():
+def reconhecimentoDeVoz(respostaErroAleatoria):
     reconhecimento = reconhecimentoDeFala.Recognizer()
 
     with reconhecimentoDeFala.Microphone() as microfone:
@@ -27,14 +23,17 @@ def reconhecimentoDeVoz():
         while True:
             try:
                 audio = reconhecimento.listen(microfone)
-                entrada = reconhecimento.recognize_google(audio, language='jp')
+                entrada = reconhecimento.recognize_google(audio, language='pt')
                 return "Você disse: {}".format(entrada)
 
             except reconhecimentoDeFala.UnknownValueError:
-                return "Não entendi..."
+                return respostaErroAleatoria
 
 print("Ouvindo.......\n----------------\n")
 
 while True:
-    fala = reconhecimentoDeVoz()
+    respostaErroAleatoria = choice(listaErros)
+    fala = reconhecimentoDeVoz(respostaErroAleatoria)
     print(fala)
+    saidaSom(fala)
+
