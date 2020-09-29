@@ -24,7 +24,7 @@ def reconhecimentoDeVoz(respostaErroAleatoria):
             try:
                 audio = reconhecimento.listen(microfone)
                 entrada = reconhecimento.recognize_google(audio, language='pt')
-                return "Você disse: {}".format(entrada)
+                return "{}".format(entrada)
 
             except reconhecimentoDeFala.UnknownValueError:
                 return respostaErroAleatoria
@@ -34,6 +34,6 @@ print("Ouvindo.......\n----------------\n")
 while True:
     respostaErroAleatoria = choice(listaErros)
     fala = reconhecimentoDeVoz(respostaErroAleatoria)
-    print(fala)
+    print("Você disse: {}".format(fala))
     saidaSom(fala)
 
