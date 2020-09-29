@@ -5,8 +5,8 @@ listaErros = [
 ]
 
 conversas = {
-    "oi": "olá, tudo bem?",
-    "sim e você": "Estou bem Obrigado por perguntar",
+    "hey": "Hello, how are you?",
+    "I'm fine and you": "I'm fine too, thank's to ask",
 }
 
 comandos = {

@@ -20,7 +20,7 @@ while True:
         while True:
             try:
                 audio = reconhecimento.listen(microfone)
-                entrada = reconhecimento.recognize_google(audio, language='pt')
+                entrada = reconhecimento.recognize_google(audio, language='en')
                 print("Você disse: {}".format(entrada))
                 resposta = conversas[entrada]    
                 print("Sakamoto-san: {}".format(resposta))
