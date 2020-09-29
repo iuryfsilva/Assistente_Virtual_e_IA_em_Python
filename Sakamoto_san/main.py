@@ -17,15 +17,24 @@ for _file in os.listdir('chats'): # Percorre todos os arquivos em chats
     
     bot.train(lines)
 
-"""
-reconhecimento = reconhecimentoDeFala.Recognizer()
-with reconhecimentoDeFala.Microphone() as microfone:
-    reconhecimento.adjust_for_ambient_noise(microfone)
-    
-    while True:
-        audio = reconhecimento.listen(microfone)
-        
-        fala = reconhecimento.recognize_google(audio, language = 'jp')
-        
-        print('Você disse: ', fala)
-        """
+
+def reconhecimentoDeVoz():
+    reconhecimento = reconhecimentoDeFala.Recognizer()
+
+    with reconhecimentoDeFala.Microphone() as microfone:
+        reconhecimento.adjust_for_ambient_noise(microfone)
+
+        while True:
+            try:
+                audio = reconhecimento.listen(microfone)
+                entrada = reconhecimento.recognize_google(audio, language='jp')
+                return "Você disse: {}".format(entrada)
+
+            except reconhecimentoDeFala.UnknownValueError:
+                return "Não entendi..."
+
+print("Ouvindo.......\n----------------\n")
+
+while True:
+    fala = reconhecimentoDeVoz()
+    print(fala)
