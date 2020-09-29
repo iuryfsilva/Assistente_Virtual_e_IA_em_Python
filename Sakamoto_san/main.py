@@ -23,7 +23,7 @@ while True:
                 entrada = reconhecimento.recognize_google(audio, language='pt')
                 print("Você disse: {}".format(entrada)
 
-                resposta = conversas[entrada]
+                resposta = conversas{entrada}
                 
                 print("Sakamoto-san: {}".format(resposta))
                 saidaSom("{}".format(resposta))
