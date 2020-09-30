@@ -5,14 +5,14 @@ def intro():
     print("-" * len(mensagem) + "\n{}\n".format(mensagem) + "-" * len(mensagem))
 
 listaErros = [
-    "Não entendi....",
-    "Desculpe, não entendi",
-    "Repita novamente por favor"
+    "Don't understand....",
+    "Sorry, i don't understand",
+    "Repeat again please"
 ]
 
 conversas = {
-    "hey": "Hello, how are you?",
-    "I'm fine and you": "I'm fine too, thank's to ask",
+    "Oi": "Hello, how are you?",
+    " eu fine and you": "I'm fine too, thank's to ask",
 }
 
 comandos = {
@@ -37,7 +37,7 @@ def verificaNomeExiste(nome):
     nomeList = dados.readlines()
     
     if not nomeList:
-        vaxio = open("dados/nomes.txt", "r")#abre o arquivo nomes no diretorio dados no modo de leitura
+        vazio = open("dados/nomes.txt", "r")#abre o arquivo nomes no diretorio dados no modo de leitura
         conteudo = vazio.readlines()
         conteudo.append("{}".format(nome))
         vazio = open("dados/nomes.txt", "w")#abre o arquivo nomes no diretorio dados no modo de escrita
@@ -51,7 +51,7 @@ def verificaNomeExiste(nome):
             return "Hello {}, we haven been meeted!".format(nome)
     
     #abre o arquivo nomes no diretorio dados no modo de leitura    
-    vaxio = open("dados/nomes.txt", "r")
+    vazio = open("dados/nomes.txt", "r")
     conteudo = vazio.readlines()
     conteudo.append("\n{}".format(nome))
     #abre o arquivo nomes no diretorio dados no modo de escrita

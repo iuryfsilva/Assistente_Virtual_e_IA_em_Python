@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8789967-5c2a-4444-b93b-7ce4a3a54ee7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Sakamoto_san/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sakamoto_san/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sakamoto_san/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sakamoto_san/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sakamoto_san/dados/nomes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sakamoto_san/dados/nomes.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,15 +12,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sakamoto_san/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+            <state relative-caret-position="47">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-                <element signature="e#105#113#0" />
+                <element signature="e#1580#2372#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sakamoto_san/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="e#36#199#0" />
+                <element signature="e#214#302#0" />
+                <element signature="e#316#409#0" />
+                <element signature="e#422#486#0" />
+                <element signature="e#520#918#0" />
+                <element signature="e#954#2004#0" />
+                <element signature="e#2026#2257#0" />
+                <element signature="e#2040#2098#0" />
+                <element signature="e#2199#2257#0" />
               </folding>
             </state>
           </provider>
@@ -34,6 +55,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Sakamoto_san/main.py" />
+        <option value="$PROJECT_DIR$/Sakamoto_san/config.py" />
       </list>
     </option>
   </component>
@@ -127,20 +149,20 @@
     <frame x="-9" y="-9" width="1384" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24981302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32984293" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.066317625" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2739965" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32984293" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -156,11 +178,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sakamoto_san/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        <state relative-caret-position="47">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-            <element signature="e#105#113#0" />
+            <element signature="e#1580#2372#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sakamoto_san/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#36#199#0" />
+            <element signature="e#214#302#0" />
+            <element signature="e#316#409#0" />
+            <element signature="e#422#486#0" />
+            <element signature="e#520#918#0" />
+            <element signature="e#954#2004#0" />
+            <element signature="e#2026#2257#0" />
+            <element signature="e#2040#2098#0" />
+            <element signature="e#2199#2257#0" />
           </folding>
         </state>
       </provider>
