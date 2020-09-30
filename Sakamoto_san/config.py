@@ -11,7 +11,7 @@ listaErros = [
 ]
 
 conversas = {
-    "Oi": "Hello, how are you?",
+    "hey": "Hello, how are you?",
     " eu fine and you": "I'm fine too, thank's to ask",
 }
 
