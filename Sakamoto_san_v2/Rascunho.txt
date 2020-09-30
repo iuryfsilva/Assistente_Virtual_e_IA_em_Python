@@ -1,0 +1,16 @@
+#-*- coding: utf-8 -*-
+
+#importanto os modulos do chatbot
+#from chatterbot.trainers import ListTrainer
+#from chatterbot import ChatBot
+
+#import os
+
+# bot = ChatBot('Sakamoto san')
+#
+# bot.set_trainer(ListTrainer) # definir treinamento
+#
+# for _file in os.listdir('chats'): # Percorre todos os arquivos em chats
+#     lines = open('chats/' + _file, 'r').readlines() # r diz respeito as permissoes de leitura  le as linhas
+#
+#     bot.train(lines)
